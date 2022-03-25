@@ -1,12 +1,14 @@
 import React from 'react';
-import "./App.css";
-import piazza from './piazza.jpeg'
+import './App.css';
+import piazza from './piazza.jpeg';
 
-const App = () => (
+function App() {
+ return (
   <div>
-    <h1 className="wow">Hello from react!</h1>
-    <img src={piazza} alt=""/>
+   <h1 className="wow">Hello from react!</h1>
+   <img src={piazza} alt="" />
   </div>
-);
+ );
+}
 
 export default App;

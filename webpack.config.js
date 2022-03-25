@@ -1,5 +1,5 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 const SRC_DIR = path.join(__dirname, 'client/src');
 const PUBLIC_DIR = path.join(__dirname, 'client/public/bundle');
@@ -9,7 +9,7 @@ module.exports = {
   entry: path.join(SRC_DIR, 'index.jsx'),
   output: {
     filename: 'bundle.js',
-    path: PUBLIC_DIR,
+    path: PUBLIC_DIR
   },
   module: {
     rules: [
@@ -20,22 +20,22 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
-          },
-        },
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
       },
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.png|svg|jpg|jpeg|gif$/,
         exclude: /node_modules/,
-        use: "file-loader",
+        use: 'file-loader'
       }
-    ],
-  },
+    ]
+  }
 };
 
 // module.exports = {
