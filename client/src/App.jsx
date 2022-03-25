@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './App.module.css';
 import piazza from './piazza.jpeg';
 
-import Test from './components/Test.jsx';
+import Test from './components/Test';
 
 function App() {
   return (
