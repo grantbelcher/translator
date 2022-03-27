@@ -1,15 +1,17 @@
 import React from 'react';
 import styles from './App.module.css';
-import piazza from './piazza.jpeg';
 
-import Test from './components/Test';
+import Field from './components/Field';
+import Languages from './components/Languages';
+import Translate from './components/Translate';
 
 function App() {
   return (
     <div>
-      <h1 className={styles.wow}>Hello from react!</h1>
-      <Test />
-      <img src={piazza} alt="" />
+      <Field />
+      <Languages />
+      <hr />
+      <Translate />
     </div>
   );
 }
