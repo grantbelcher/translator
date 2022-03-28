@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './Field.module.css';
 
-const Field = () => {
+const Field = ({ label, onChange, value }) => {
   return (
     <form>
-      <label>Insert text to be translated:</label>
-      <input type="text" />
+      <label>{label}</label>
+      <input type="text" value={value} onChange={(e) => onChange(e.target.value)} />
     </form>
   );
 };

@@ -4,7 +4,7 @@ function Languages() {
   return (
     <div>
       <form>
-        <label>Select a language</label>
+        <label>Select a language: </label>
         <select>
           <option value="option 1">Option 1</option>
           <option value="option 2">Option 2</option>

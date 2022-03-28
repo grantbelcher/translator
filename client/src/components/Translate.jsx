@@ -1,7 +1,11 @@
 import React from 'react';
 
 function Translate() {
-  return <div>translate</div>;
+  return (
+    <div>
+      
+    </div>
+  )
 }
 
 export default Translate;
